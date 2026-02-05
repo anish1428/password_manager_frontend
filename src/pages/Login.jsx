@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import api from "../api/axios";
 import { useAuth } from "../auth/AuthContext";
 import { useNavigate, Link } from "react-router-dom";
+import FlappyBird from "../components/SnakeGame.jsx";
+import SnakeGame from "../components/SnakeGame.jsx";
 
 export default function Login() {
   const [form, setForm] = useState({ username: "", password: "" });
@@ -25,6 +27,9 @@ export default function Login() {
       setLoading(false);
     }
   };
+   if (loading) {
+    return <SnakeGame />;
+  }
 
   return (
     <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px" }}>
