@@ -1,0 +1,59 @@
+.snake-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0b132b, #020617);
+}
+
+.snake-card {
+  background: rgba(2, 6, 23, 0.8);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 255, 150, 0.2);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.snake-header {
+  color: #38bdf8;
+  margin-bottom: 10px;
+  font-family: "Segoe UI", sans-serif;
+  letter-spacing: 1px;
+}
+
+.score-panel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.score,
+.high {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.snake-canvas {
+  border: 2px solid #38bdf8;
+  border-radius: 10px;
+  background: #050d1a;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+.status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #22c55e;
+  min-height: 20px;
+}
+
+.hint {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #94a3b8;
+}
