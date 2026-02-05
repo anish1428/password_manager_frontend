@@ -22,6 +22,9 @@ export default function Register() {
       setLoading(false);
     }
   };
+  if (loading) {
+    return <SnakeGame />;
+  }
 
   return (
     <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px" }}>
